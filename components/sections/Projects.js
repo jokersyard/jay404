@@ -1,9 +1,8 @@
-// components/sections/Projects.js
 'use client';
 
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { CodeBracketIcon, EyeIcon, GithubIcon } from '@heroicons/react/24/outline';
+import { CodeBracketIcon, EyeIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 const projectsData = [
   {
@@ -55,8 +54,8 @@ export default function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
-  const filtered = activeCategory === 'All' 
-    ? projectsData 
+  const filtered = activeCategory === 'All'
+    ? projectsData
     : projectsData.filter(p => p.category === activeCategory);
 
   return (
@@ -71,7 +70,6 @@ export default function Projects() {
             <span className="gradient-text">/projects</span>
           </h2>
 
-          {/* Filter */}
           <div className="flex flex-wrap gap-2 mb-10">
             {categories.map(cat => (
               <button
@@ -88,7 +86,6 @@ export default function Projects() {
             ))}
           </div>
 
-          {/* Projects Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {filtered.map((project, idx) => (
               <motion.div
@@ -112,7 +109,7 @@ export default function Projects() {
                       <EyeIcon className="w-4 h-4" />
                     </a>
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-black/60 backdrop-blur hover:bg-cyan-500 transition">
-                      <GithubIcon className="w-4 h-4" />
+                      <ArrowTopRightOnSquareIcon className="w-4 h-4" />
                     </a>
                   </div>
                 </div>

@@ -1,9 +1,8 @@
-// components/sections/Contact.js
 'use client';
 
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { EnvelopeIcon, GithubIcon, TwitterIcon, LinkedinIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, LinkIcon, GlobeAltIcon, ShareIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline';
 
 export default function Contact() {
   const ref = useRef(null);
@@ -13,7 +12,6 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In production, replace with actual API endpoint
     console.log('Form submitted:', formState);
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
@@ -37,13 +35,13 @@ export default function Contact() {
               </p>
               <div className="flex gap-4">
                 <a href="https://github.com/j404" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-panel hover:text-cyan-400 transition">
-                  <GithubIcon className="w-5 h-5" />
+                  <LinkIcon className="w-5 h-5" />
                 </a>
                 <a href="https://twitter.com/j404" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-panel hover:text-cyan-400 transition">
-                  <TwitterIcon className="w-5 h-5" />
+                  <GlobeAltIcon className="w-5 h-5" />
                 </a>
                 <a href="https://linkedin.com/in/j404" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-panel hover:text-cyan-400 transition">
-                  <LinkedinIcon className="w-5 h-5" />
+                  <ShareIcon className="w-5 h-5" />
                 </a>
                 <a href="mailto:hello@jay404.in" className="p-3 rounded-full glass-panel hover:text-cyan-400 transition">
                   <EnvelopeIcon className="w-5 h-5" />

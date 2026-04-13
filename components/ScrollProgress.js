@@ -1,4 +1,3 @@
-// components/ScrollProgress.js
 'use client';
 
 import { useEffect, useState } from 'react';

@@ -1,4 +1,3 @@
-// components/sections/About.js
 'use client';
 
 import { motion, useInView } from 'framer-motion';

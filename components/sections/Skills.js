@@ -1,14 +1,13 @@
-// components/sections/Skills.js
 'use client';
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const skills = {
-  'Frontend': ['React', 'Next.js', 'Tailwind', 'TypeScript', 'Framer Motion'],
+  Frontend: ['React', 'Next.js', 'Tailwind', 'TypeScript', 'Framer Motion'],
   'Backend & AI': ['Node.js', 'Python', 'OpenAI API', 'PostgreSQL', 'Redis'],
   'Tools & Workflow': ['Git', 'Vercel', 'Docker', 'Figma', 'VS Code'],
-  'Mindset': ['Problem Solving', 'Fast Learning', 'Design Thinking', 'Product Focus']
+  Mindset: ['Problem Solving', 'Fast Learning', 'Design Thinking', 'Product Focus']
 };
 
 export default function Skills() {
@@ -37,7 +36,7 @@ export default function Skills() {
               >
                 <h3 className="text-lg font-semibold mb-4 text-cyan-400">{category}</h3>
                 <div className="flex flex-wrap gap-2">
-                  {items.map(skill => (
+                  {items.map((skill) => (
                     <span key={skill} className="px-3 py-1 text-sm rounded-full bg-white/5 border border-white/10">
                       {skill}
                     </span>

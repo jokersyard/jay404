@@ -1,4 +1,3 @@
-// components/sections/Products.js
 'use client';
 
 import { useRef } from 'react';

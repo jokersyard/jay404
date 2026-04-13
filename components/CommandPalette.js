@@ -1,4 +1,3 @@
-// components/CommandPalette.js
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -11,7 +10,7 @@ const commands = [
   { name: 'Products', icon: RocketLaunchIcon, href: '#products' },
   { name: 'Blog', icon: BookOpenIcon, href: '#blog' },
   { name: 'Skills', icon: Squares2X2Icon, href: '#skills' },
-  { name: 'Contact', icon: EnvelopeIcon, href: '#contact' },
+  { name: 'Contact', icon: EnvelopeIcon, href: '#contact' }
 ];
 
 export default function CommandPalette({ isOpen, onClose }) {

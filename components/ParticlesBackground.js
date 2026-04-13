@@ -1,4 +1,3 @@
-// components/ParticlesBackground.js
 'use client';
 
 import { useEffect, useRef } from 'react';
@@ -8,6 +7,8 @@ export default function ParticlesBackground() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
+
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     let particles = [];
@@ -46,31 +47,33 @@ export default function ParticlesBackground() {
       resize();
       particles = [];
       const particleCount = Math.min(100, Math.floor((canvas.width * canvas.height) / 15000));
-      for (let i = 0; i < particleCount; i++) {
+      for (let i = 0; i < particleCount; i += 1) {
         particles.push(new Particle());
       }
     };
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(particle => {
+      particles.forEach((particle) => {
         particle.update();
         particle.draw();
       });
       animationFrameId = requestAnimationFrame(animate);
     };
 
+    const handleResize = () => {
+      resize();
+      init();
+    };
+
     init();
     animate();
 
-    window.addEventListener('resize', () => {
-      resize();
-      init();
-    });
+    window.addEventListener('resize', handleResize);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      window.removeEventListener('resize', init);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 

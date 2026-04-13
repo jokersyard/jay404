@@ -1,8 +1,6 @@
-// app/layout.js
 import './globals.css';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
-import { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' });
@@ -31,13 +29,13 @@ export const metadata = {
       }
     ],
     locale: 'en_US',
-    type: 'website',
+    type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
     title: 'J404 | Building Ideas into Digital Reality',
     description: 'Explore the portfolio of a next-gen developer building AI tools and web experiences.',
-    images: ['/og-image.png'],
+    images: ['/og-image.png']
   },
   robots: {
     index: true,
@@ -47,9 +45,9 @@ export const metadata = {
       follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+      'max-snippet': -1
+    }
+  }
 };
 
 export default function RootLayout({ children }) {

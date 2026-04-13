@@ -1,12 +1,11 @@
-// components/sections/Hero.js
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRightIcon, EnvelopeIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-24 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-transparent pointer-events-none" />
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <motion.div
