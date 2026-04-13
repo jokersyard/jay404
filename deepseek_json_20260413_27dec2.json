@@ -1,0 +1,24 @@
+// data/projects.json (placeholder for easy editing)
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Nexus AI",
+      "description": "Real-time AI assistant for developers with code completion and chat interface.",
+      "image": "/project1.jpg",
+      "tech": ["Next.js", "OpenAI", "Tailwind", "Redis"],
+      "category": "AI",
+      "demo": "https://demo.jay404.in/nexus",
+      "github": "https://github.com/j404/nexus-ai"
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "Building my first AI agent: Lessons learned",
+      "date": "Mar 15, 2025",
+      "excerpt": "From API calls to autonomous reasoning — what I discovered building a task-executing agent.",
+      "readTime": "5 min",
+      "slug": "first-ai-agent"
+    }
+  ]
+}
