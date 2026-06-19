@@ -21,3 +21,6 @@ export { Flex } from './Flex';
 export { Stack } from './Stack';
 export { AccessibleButton } from './AccessibleButton';
 export { AccessibleLink } from './AccessibleLink';
+export { Breadcrumb } from './Breadcrumb';
+export { Alert } from './Alert';
+export { Tabs } from './Tabs';
