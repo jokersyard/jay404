@@ -28,3 +28,6 @@ export { Pagination } from './Pagination';
 export { SearchFilter } from './SearchFilter';
 export { OptimizedImage } from './OptimizedImage';
 export { Accordion } from './Accordion';
+export { ResponsiveContainer } from './ResponsiveContainer';
+export { Show, Hide } from './ResponsiveDisplay';
+export { Spacer } from './Spacer';
