@@ -31,3 +31,6 @@ export { Accordion } from './Accordion';
 export { ResponsiveContainer } from './ResponsiveContainer';
 export { Show, Hide } from './ResponsiveDisplay';
 export { Spacer } from './Spacer';
+export { Icon } from './Icon';
+export { Skeleton } from './Skeleton';
+export { TextHighlight } from './TextHighlight';
