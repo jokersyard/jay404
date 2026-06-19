@@ -24,3 +24,7 @@ export { AccessibleLink } from './AccessibleLink';
 export { Breadcrumb } from './Breadcrumb';
 export { Alert } from './Alert';
 export { Tabs } from './Tabs';
+export { Pagination } from './Pagination';
+export { SearchFilter } from './SearchFilter';
+export { OptimizedImage } from './OptimizedImage';
+export { Accordion } from './Accordion';
