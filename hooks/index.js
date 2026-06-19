@@ -11,3 +11,5 @@ export { usePrevious } from './usePrevious';
 export { useKeyPress } from './useKeyPress';
 export { useMemoCallback } from './useMemoCallback';
 export { useDebugger } from './useDebugger';
+export { useFetch } from './useFetch';
+export { useMutation } from './useMutation';
