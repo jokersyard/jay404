@@ -6,3 +6,7 @@ export { Textarea } from './Textarea';
 export { Section } from './Section';
 export { Container } from './Container';
 export { Heading } from './Heading';
+export { Loader } from './Loader';
+export { Modal } from './Modal';
+export { Toast } from './Toast';
+export { Tooltip } from './Tooltip';
