@@ -19,3 +19,5 @@ export { Text } from './Text';
 export { Divider } from './Divider';
 export { Flex } from './Flex';
 export { Stack } from './Stack';
+export { AccessibleButton } from './AccessibleButton';
+export { AccessibleLink } from './AccessibleLink';
