@@ -5,3 +5,7 @@ export { useToggle } from './useToggle';
 export { useForm } from './useForm';
 export { useAsync } from './useAsync';
 export { useMediaQuery } from './useMediaQuery';
+export { useClickOutside } from './useClickOutside';
+export { useLocalStorage } from './useLocalStorage';
+export { usePrevious } from './usePrevious';
+export { useKeyPress } from './useKeyPress';
