@@ -34,3 +34,6 @@ export { Spacer } from './Spacer';
 export { Icon } from './Icon';
 export { Skeleton } from './Skeleton';
 export { TextHighlight } from './TextHighlight';
+export { Sidebar } from './Sidebar';
+export { ProgressBar } from './ProgressBar';
+export { Table } from './Table';
